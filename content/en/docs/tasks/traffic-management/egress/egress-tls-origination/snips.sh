@@ -140,12 +140,12 @@ HTTP/2 200
 ...
 ENDSNIP
 
-snip_cleanup_the_tls_origination_configuration_1() {
+snip_cleanup_the_tls_origination_configuration_destinationrule() {
 kubectl delete serviceentry edition-cnn-com
 kubectl delete destinationrule edition-cnn-com
 }
 
-snip_cleanup_the_tls_origination_configuration_2() {
+snip_cleanup_the_tls_origination_configuration_backendtlspolicy() {
 kubectl delete serviceentry edition-cnn-com
 kubectl delete backendtlspolicy edition-cnn-com
 }

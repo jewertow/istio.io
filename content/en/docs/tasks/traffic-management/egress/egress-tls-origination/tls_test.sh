@@ -56,9 +56,9 @@ _verify_elided snip_curl_origination_https "$snip_curl_origination_https_out"
 
 # @cleanup
 if [ "$GATEWAY_API" != "true" ]; then
-    snip_cleanup_the_tls_origination_configuration_1
+    snip_cleanup_the_tls_origination_configuration_destinationrule
 else
-    snip_cleanup_the_tls_origination_configuration_2
+    snip_cleanup_the_tls_origination_configuration_backendtlspolicy
 fi
 
 cleanup_curl_sample
